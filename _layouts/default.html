@@ -65,7 +65,13 @@
           </header>
           <section>
 
+          {% if site.github.base_url != "/index.html" or site.github.base_url != "/" %}
+            <span class="not-centered">
+          {% endif %}
           {{ content }}
+          {% if site.github.base_url = "/index.html" or site.github.base_url != "/" %}
+            </span>
+          {% endif %}
 
           </section>
           <footer>
