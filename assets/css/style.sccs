@@ -2,3 +2,213 @@
 ---
 
 @import "{{ site.theme }}";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #696969;
+	font: 11px/1.55 Tahoma,Helvetica,sans-serif;
+	text-align: center;
+	font-size: 14px;
+	background: url(https://static2.magentron.com/skin/frontend/magentron/default/images/background-top-bg.jpg) repeat-x #f5f5f5;
+	padding: 0;
+}
+body .page-wrapper {
+	background: url(https://static3.magentron.com/skin/frontend/magentron/default/images/xbackground-top.jpg.pagespeed.ic.8GZTtjkWgq.jpg) no-repeat center 0;
+	min-width: 990px;
+}
+body .page {
+	background: none;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header-container {
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0;
+	padding: 50px 0 10px 0;
+}
+.header {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 0 25px 0;
+	text-align: right;
+	position: relative;
+	z-index: 10;
+}
+.header .logo {
+	float: left;
+	text-decoration: none!important;
+}
+.header a.logo {
+	height: 54px;
+}
+a.logo {
+	margin: 18px 0 0 24px!important;
+	padding: 0 0 0 0!important;
+}
+.header .logo strong {
+	position: absolute;
+	top: -999em;
+	left: -999em;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -999em;
+	overflow: hidden;
+}
+.header h1.logo, .header h2.logo {
+	margin: 0;
+}
+div.header a.logo img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.header .subtitle {
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+.subtitle {
+	clear: both;
+	padding: 15px 0 0;
+	margin: 0 0 6px;
+}
+.subtitle img {
+	max-width: inherit;
+}
+
+.page .nav-container {
+	width: 950px;
+	background: none;
+	margin: 0 auto 10px auto;
+	clear: both;
+}
+.nav-container #nav {
+	padding: 0;
+	width: 920px;
+	height: 28px;
+	margin: 0 auto;
+	list-style: none;
+}
+#nav li {
+	padding-right: 20px;
+	float: left;
+	position: relative;
+	text-align: left;
+}
+.nav-container #nav li a {
+	color: #ddd;
+	padding: 0 10px 0 10px;
+}
+#nav li a, #nav li a:hover {
+	font: 12px/28px Verdana,Helvetica,sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#nav a {
+	float: left;
+}
+#nav a, #nav a:hover {
+	display: block;
+}
+
+.wrapper ul {
+	list-style-position: inside;
+}
+.wrapper a,
+.wrapper a:visited {
+	color: #5d5d5d;
+}
+
+@media print, screen and (max-width: 960px) {
+	header {
+		padding-right: 0 !important;
+	}
+}
+
+@media all and (max-width: 949px) {
+	body .page-wrapper {
+		max-width: 100%;
+		width: 100%;
+		min-width: 100%;
+	}
+	.header-container {
+		width: 100%;
+		overflow-x: hidden;
+	}
+	.header {
+		width: 80%;
+	}
+	.page .nav-container {
+		width: 100%;
+	}
+	.nav-container #nav {
+		width: 80%;
+	}
+}
+@media all and (max-width: 919px) {
+	div.header .subtitle {
+		right: inherit;
+		left: 30px;
+		top: 40px;
+	}
+	div.header .subtitle img {
+		max-width: 100%;
+	}
+}
+@media all and (max-width: 429px) {
+	#nav li {
+		padding-right: 5px;
+	}
+}
+@media all and (max-width: 359px) {
+	#nav li {
+		padding-right: 0;
+	}
+}
+@media all and (max-width: 339px) {
+	.page .nav-container {
+		width: 330px;
+	}
+}
+
+.header h1, .page-title h1, .page-title h2 {
+	font-family: sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial,Helvetica,sans-serif;
+	color: #5d5d5d;
+	line-height: 130%;
+}
+
+a:link, a:visited {
+	color: #313131;
+}
+a {
+	text-decoration: none;
+}
+a, a:active {
+	outline: none;
+}
+
+.header-container:after, .header:after {
+	display: block;
+	content: ".";
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	height: 0;
+	overflow: hidden;
+}
