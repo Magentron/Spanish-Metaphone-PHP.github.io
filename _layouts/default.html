@@ -68,7 +68,7 @@
           <section>
 
           {% if site.github.baseurl != "/index.html" and site.github.baseurl != "/" %}
-            <span class="not-centered">
+            <span class="not-centered" data-baseurl="{{ site.github.baseurl }}">
           {% endif %}
           {{ content }}
           {% if site.github.baseurl != "/index.html" and site.github.baseurl != "/" %}
