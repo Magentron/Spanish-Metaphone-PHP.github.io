@@ -67,11 +67,11 @@
           </header>
           <section>
 
-          {% if page.url != "/index.html" and page.url != "/" %}
+          {% if page.url != "/" and page.url != "/index.html" and page.url != "/Metaphone-Spanish-PHP/" and page.url != "/Metaphone-Spanish-PHP/index.html" %}
             <span class="not-centered" data-page-url="{{ page.url }}">
           {% endif %}
           {{ content }}
-          {% if page.url != "/index.html" and page.url != "/" %}
+          {% if page.url != "/" and page.url != "/index.html" and page.url != "/Metaphone-Spanish-PHP/" and page.url != "/Metaphone-Spanish-PHP/index.html" %}
             </span>
           {% endif %}
 

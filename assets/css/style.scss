@@ -137,7 +137,9 @@ div.header .subtitle {
 		padding-right: 0 !important;
 	}
 	body .not-centered {
-		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+		display: block;
 	}
 }
 @media all and (max-width: 949px) {
@@ -170,6 +172,14 @@ div.header .subtitle {
 		max-width: 100%;
 	}
 }
+@media all and (max-width: 520px) {
+	body .not-centered {
+		width: 90%;
+		text-align: left;
+		margin: 0 auto;
+	}
+}
+
 @media all and (max-width: 429px) {
 	#nav li {
 		padding-right: 5px;
