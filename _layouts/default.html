@@ -69,7 +69,7 @@
 
           {% assign content_size = content | size %}
           {% if size > 1024 %}
-            <span class="not-centered" data-page-url="{{ page.url }}">
+            <span class="not-centered" data-page-url="{{ page.url }} data-size="{{ size }}">
           {% endif %}
           {{ content }}
           {% if size > 1024 %}
